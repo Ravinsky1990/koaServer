@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Homework</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+	<aside class="sidebar">
+		<div class="burger">
+			<span class="burger__cheese"></span>
+			<span class="burger__salad"></span>
+			<span class="burger__meat"></span>
+		</div>
+		<div class="logo">
+			<a href="/"><img src="img/logo_white.svg" alt="logo"></a>
+		</div>
+		<nav class="sidebar__navigation">
+			<a href="#" class="sidebar__link">
+				<img src="img/calendar.svg" alt="calendar">
+				<span class="sidebar__num-marker sidebar__num-marker_active">1</span>
+				<span class="sidebar__vertical-marker"></span>
+			</a>
+			<a href="profile_1" class="sidebar__link">
+				<img src="img/my_profile.svg" alt="myprofile">
+				<span class="sidebar__num-marker"></span>
+				<span class="sidebar__vertical-marker"></span>
+			</a>
+			<a href="#" class="sidebar__link">
+				<img src="img/tools.svg" alt="tools">
+				<span class="sidebar__num-marker"></span>
+				<span class="sidebar__vertical-marker"></span>
+			</a>
+			<a href="#" class="sidebar__link">
+				<img src="img/Group.svg" alt="team">
+				<span class="sidebar__num-marker"></span>
+				<span class="sidebar__vertical-marker"></span>
+			</a>
+			<a href="#" class="sidebar__link">
+				<img src="img/messages.svg" alt="message">
+				<span class="sidebar__num-marker"></span>
+				<span class="sidebar__vertical-marker sidebar__vertical-marker_active"></span>
+			</a>
+		</nav>
+	</aside>
+	<header class="top-line">
+		<ul class="top-line__rout">
+			<li class="top-line__route-list-item">
+				<a href="#" class="top-line__rout-link">Home</a>
+				<img class="top-line__shevron top-line__shevron_visible" src="img/shevron-right.svg" alt="shevron">
+			</li>
+			<li class="top-line__route-list-item">
+				<a href="#" class="top-line__rout-link">Network</a>
+				<img class="top-line__shevron" src="img/shevron-right.svg" alt="shevron">
+			</li>
+		</ul>
+		<div class="current-user">
+			<img src="img/sarah.png" alt="currentUser" class="current-user__image">
+			<span class="current-user__name">Sarah Freeman</span>
+			<a href="#">
+				<img src="img/shevron-dawn.svg" alt="shevron">
+			</a>
+		</div>
+	</header>
+	<main class="user-chat">
+		<section class="user-list">
+			<div class="user-item">
+				<span class="user-item__time">9:32</span>
+				<img src="img/miranda.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Miranda Hops <i class="user-item__active-marker user-item__active-marker_visible"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker user-item__sound-marker_visible" alt="sound">
+					</div>
+					<span class="user-item__message">Excepteur sint occaecatar…</span>
+				</div>
+			</div>
+			<div class="user-item">
+				<span class="user-item__time">9:32</span>
+				<img src="img/barry.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Barry Callebaut <i class="user-item__active-marker"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker" alt="sound">
+					</div>
+					<span class="user-item__message">Nemo enim ipsam volupta…</span>
+				</div>
+			</div>
+			<div class="user-item">
+				<span class="user-item__time">22:01</span>
+				<img src="img/stacey.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Stacey Dosh <i class="user-item__active-marker user-item__active-marker_visible"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker" alt="sound">
+					</div>
+					<span class="user-item__message">Ut enim ad minima veniam…</span>
+				</div>
+			</div>
+			<div class="user-item">
+				<span class="user-item__time">19:15</span>
+				<img src="img/michael.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Michael Kors <i class="user-item__active-marker"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker" alt="sound">
+					</div>
+					<span class="user-item__message">To take a trivial example…</span>
+				</div>
+			</div>
+			<div class="user-item">
+				<span class="user-item__time">9:32</span>
+				<img src="img/johny.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Johny Cash <i class="user-item__active-marker user-item__active-marker_visible"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker" alt="sound">
+					</div>
+					<span class="user-item__message">Great explorer of the truth…</span>
+				</div>
+			</div>
+			<div class="user-item">
+				<span class="user-item__time">9:32</span>
+				<img src="img/stacey.png" alt="usr-avatar">
+				<div class="user-item__meta">
+					<div class="user-item__name">
+						<span>Stacey Dosh <i class="user-item__active-marker"></i></span>
+						<img src="img/saundicon.svg" class="user-item__sound-marker" alt="sound">
+					</div>
+					<span class="user-item__message">Ut enim ad minima veniam…</span>
+				</div>
+			</div>
+		</section>
+		<section class="dialog">
+			<div class="search-message">
+				<img src="img/search.svg" alt="search" class="search-message__icon">
+				<input type="text" placeholder="Search message..." class="search-message__input">
+			</div>
+			<div class="dialog-content">
+				<div class="dialog-content__dialog-item">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar dialog-content__avatar__visible">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg dialog-content__cornerimg__visible">
+						<img src="img/corner-right.svg" alt="cr" class="dialog-content__cornerimg-right">
+						<span class="dialog-content__msg">On the other hand, we denounce with righteous indignation!</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item dialog-content__dialog-item__outcoming">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg">
+						<img src="img/corner-right.svg" alt="cr"
+							class="dialog-content__cornerimg-right dialog-content__cornerimg-right__visible">
+						<span class="dialog-content__msg">Which is the same as saying?</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar dialog-content__avatar__visible">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg dialog-content__cornerimg__visible">
+						<img src="img/corner-right.svg" alt="cr" class="dialog-content__cornerimg-right">
+						<span class="dialog-content__msg">On the other hand, we denounce with righteous indignation!</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item dialog-content__dialog-item__outcoming">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg">
+						<img src="img/corner-right.svg" alt="cr"
+							class="dialog-content__cornerimg-right dialog-content__cornerimg-right__visible">
+						<span class="dialog-content__msg">Which is the same as saying?</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar dialog-content__avatar__visible">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg dialog-content__cornerimg__visible">
+						<img src="img/corner-right.svg" alt="cr" class="dialog-content__cornerimg-right">
+						<span class="dialog-content__msg">On the other hand, we denounce with righteous indignation!</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar dialog-content__avatar__visible">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg dialog-content__cornerimg__visible">
+						<img src="img/corner-right.svg" alt="cr" class="dialog-content__cornerimg-right">
+						<span class="dialog-content__msg">On the other hand, we denounce with righteous indignation!</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+				<div class="dialog-content__dialog-item">
+					<div class="dialog-content__img-wrapper">
+						<img src="img/avatar.png" alt="avatar" class="dialog-content__avatar dialog-content__avatar__visible">
+					</div>
+					<div class="dialog-content__msg-wrapper">
+						<img src="img/corner.svg" alt="corner" class="dialog-content__cornerimg dialog-content__cornerimg__visible">
+						<img src="img/corner-right.svg" alt="cr" class="dialog-content__cornerimg-right">
+						<span class="dialog-content__msg">On the other hand, we denounce with righteous indignation!</span>
+						<span class="dialog-content__time">01:14</span>
+					</div>
+				</div>
+			</div>
+			<div class="send-message">
+				<input type="text" placeholder="Write a message…" class="send-message__input">
+				<div class="send-message__icons-wrap">
+					<img src="img/smiling-emoticon-square-face@2x.svg" alt="smile" class="send-message__smile">
+					<img src="img/add.svg" alt="add" class="send-message__smile__add">
+					<div class="send-message__send-icon">
+						<img src="img/send.svg" alt="send">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="scripts/burger.js"></script>
+</body>
+
+</html>

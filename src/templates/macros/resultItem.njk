@@ -1,0 +1,23 @@
+{% macro resultItem(avatarPath) %}
+  <figure class="resItem">
+    <div class="resItem__avatar">
+      <img src={{avatarPath}} alt="rt">
+    </div>
+    <div class="resItem__content">
+      <div class="resItem__name">
+        <span>Richard Thompson</span><img src="../img/gold.svg" alt="gold">
+      </div>
+      <div class="resItem__location">
+        <img src="../img/map.svg" alt="map"><span>Vancouver, Canada</span>
+      </div>
+      <div class="resItem__stackInfo">
+        <span class="resItem__stack">Stack: </span><span class="resItem__detail">Python, Django, Sketch</span>
+        <a href="#">More</a>
+      </div>
+      <div class="resItem__rateInfo">
+        <span class="resItem__rate">Base Daily Rate: </span>
+        <span class="resItem__rateVal">$ 1,200 USD</span>
+      </div>
+    </div>
+  </figure>
+{% endmacro %}

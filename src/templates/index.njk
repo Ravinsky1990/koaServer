@@ -1,0 +1,33 @@
+{% extends "base.njk" %} 
+{% import "macros/select.njk" as _ %}
+{% import "macros/datePiker.njk" as dp %}
+{% import "macros/button.njk" as btn %}
+{% import "macros/sortBox.njk" as s %}
+{% import "macros/resultItem.njk" as res %}
+
+{# {% set groupSelect = [{label:"location", value:"", hasMarker:true},{label:"CATEGORY", value:"Category", hasMarker:false},{label:"SERVICE", value:"servise", hasMarker:false},{label:"SUBCATEGORY", value:"Subcategory", hasMarker:false}] %}
+{% set resSearch = [{path:"../img/richardTomson_1.png"},{path:"../img/rt_2.png"},{path:"../img/rt_3.png"},{path:"../img/rt_4.png"},{path:"../img/rt_5.png"},{path:"../img/rt_6.png"},{path:"../img/richardTomson_1.png"},{path:"../img/richardTomson_1.png"}] %} #}
+
+{% block content %}
+  <main class="searchBox">
+    <section class="selectGroup">
+        {% for s in groupSelect %}
+          <div>
+            {{_.select(s.label, s.value, s.hasMarker)}}
+          </div>
+        {% endfor %}
+      {{dp.date("PERIOD", "11/01/19 - 14/01/19")}}
+      {{btn.button("SEARCH")}}
+    </section>
+    <section class="results">
+      {{s.sortBox()}}
+      <div class="searchResults">
+        {% for r in resSearch %}
+          <div>
+            {{res.resultItem(r.path)}}
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+{% endblock %}%}
